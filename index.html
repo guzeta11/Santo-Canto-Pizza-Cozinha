@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santo Canto Pizza & Cozinha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+      color: #fbc02d;
+    }
+
+    header {
+      background: #111;
+      color: #fbc02d;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 0 15px #fbc02d;
+    }
+
+    nav {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    nav a {
+      color: #fbc02d;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      background-color: #fbc02d;
+      color: #0f0f0f;
+      box-shadow: 0 0 15px #fbc02d;
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(251, 192, 45, 0.3);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fbc02d;
+      text-shadow: 0 0 10px #fbc02d;
+      margin-bottom: 20px;
+    }
+
+    p, ul, iframe {
+      color: #eee;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a.button-link {
+      display: inline-block;
+      color: #fbc02d;
+      border: 2px solid #fbc02d;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    a.button-link:hover {
+      background-color: #fbc02d;
+      color: #111;
+      box-shadow: 0 0 12px #fbc02d;
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(251, 192, 45, 0.4);
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fbc02d;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 60px;
+      box-shadow: 0 -2px 10px #fbc02d;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 0 0 12px #25d366;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animação */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Santo Canto Pizza & Cozinha</h1>
+    <p>O melhor da culinária brasileira e pizzas artesanais em Gurupi</p>
+  </header>
+
+  <nav>
+    <a href="#localizacao">Localização</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container" id="localizacao">
+    <h2>📍 Localização</h2>
+    <p>Endereço: Avenida Pará, 1671 - Setor Central, Gurupi - TO</p>
+    <p>Telefone: <a class="button-link" href="tel:+556333120218">+55 63 3312-0218</a></p>
+    <p>Horário:</p>
+    <ul>
+      <li>Terça a Domingo: 18h00 às 01h00</li>
+      <li>Segunda-feira: Fechado</li>
+    </ul>
+    <p>Observação: Não cobramos taxa de 10% (avisos no local).</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14688.757315576822!2d-49.0708362!3d-11.7302851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933e950f952f0dab%3A0xed41607a980d9d88!2sSanto%20Canto%20Pizza%20e%20Cozinha!5e0!3m2!1spt-BR!2sbr!4v1683182582791!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+  </div>
+
+  <div class="container" id="cardapio">
+    <h2>🍽️ Cardápio</h2>
+    <p>Alguns dos nossos pratos mais pedidos:</p>
+    <ul>
+      <li>Pizza de Estrogonofe de Filé</li>
+      <li>Panelinha de Camarão</li>
+      <li>Picanha na Chapa</li>
+      <li>Porções de Frios (servidas no quilo)</li>
+    </ul>
+    <p>Também oferecemos sorvete de creme com calda como sobremesa.</p>
+  </div>
+
+  <div class="container" id="servicos">
+    <h2>🎉 Serviços</h2>
+    <ul>
+      <li>Ambiente rústico e aconchegante</li>
+      <li>Área kids com brinquedos e TV</li>
+      <li>Música ao vivo nos finais de semana</li>
+      <li>Ambiente familiar e atendimento profissional</li>
+      <li>Self-service de tira-gostos</li>
+    </ul>
+  </div>
+
+  <div class="container" id="contato">
+    <h2>📞 Contato</h2>
+    <p>Faça sua reserva ou tire dúvidas:</p>
+    <a class="button-link" href="tel:+556333120218">+55 63 3312-0218</a>
+    <p>Instagram: <a class="button-link" href="https://www.instagram.com/santocanto_/" target="_blank">@santocanto_</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Santo Canto Pizza & Cozinha - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-button" href="https://wa.me/556333120218" target="_blank" title="Fale conosco no WhatsApp">
+    📱
+  </a>
+</body>
+</html>
